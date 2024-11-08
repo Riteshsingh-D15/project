@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parts</title>
+   <style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.image{
+    margin: auto;
+    width: 1080px;
+    height: 920px;
+}
+.table-container {
+    background-image: url('car_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.car-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car-parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.car-parts-table th,
+.car-parts-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-parts-table th {
+    background-color:  #33cc33;
+    color: #fff;
+}
+
+.car-parts-table tbody tr:nth-child(odd) {
+    background-color: #c2f0c2;
+}
+
+.car-parts-table tbody tr:nth-child(even) {
+    background-color:  #33cc33;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c2f0c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color:  #33cc33;
+}
+
+   </style>
+</head>
+<body>
+    <img src="img/car1.jpg" alt="Car Image" class="car-image">
+    <div class="table-container">
+        <img src="img/car1.jpg" alt="Car Image" class="car-image">
+        <table class="car-parts-table">
+            <thead>
+                <tr>
+                    <th>Part Name</th>
+                    <th>Description</th>
+                </tr>
+            
+                <tr>
+            </thead>        
+                    <td>Engine</td>
+                    <td>The engine is the heart of the car that converts fuel into power to move the vehicle.</td>
+                </tr>
+                <tr>
+                    <td>Transmission</td>
+                    <td>The transmission transfers power from the engine to the wheels, enabling the car to move.</td>
+                </tr>
+                <tr>
+                    <td>Brakes</td>
+                    <td>The braking system slows down or stops the vehicle by applying friction to the wheels.</td>
+                </tr>
+                <tr>
+                    <td>Suspension</td>
+                    <td>The suspension system absorbs shocks from the road, providing a smooth ride.</td>
+                </tr>
+                <tr>
+                    <td>Exhaust</td>
+                    <td>The exhaust system channels gases from the engine out of the car, reducing noise and emissions.</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>120000$</td>
+                </tr
+        
+        </table>
+        <a href="buy.html"><button class="buy-button">Buy Now</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: 0;
+            background-image: url('img/car7Copy.jpg');
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .head {
+            text-align: center;
+            color: green;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="head">Loan Application Form</div>
+    <div class="form-container">
+        <form id="car-loan-form">        
+            
+           <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="@gamil.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91">
+
+            <label for="amount">Loan Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="term">Loan Term (in years):</label>
+            <input type="number" id="term" name="term" required>
+
+            <label for="income">Annual Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="car-model">Car Model:</label>
+            <input type="text" id="car-model" name="car-model" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="purpose">Purpose of Loan:</label>
+            <textarea id="purpose" name="purpose" required></textarea>
+
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
